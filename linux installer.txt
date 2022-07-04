@@ -1,0 +1,82 @@
+Commands need to be installed:
+
+
+curl:
+sudo yum install curl
+Verification:  curl --version
+
+wget:
+ sudo yum install wget
+ 
+Link: https://www.cyberciti.biz/faq/yum-install-wget-redhat-cetos-rhel-7/
+ 
+java8:
+sudo yum install java-1.8.0-openjdk-devel
+Verification: java -version
+Link: https://developers.redhat.com/blog/2018/12/10/install-java-rhel8#tl__dr
+
+java11:
+sudo yum install java-11-openjdk-devel
+
+ruby:
+sudo yum install ruby
+Verification: ruby --version
+Link: https://www.ruby-lang.org/en/documentation/installation/#yum
+
+python:
+yum install python
+Verification: python --version
+Link: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/assembly_installing-and-using-python_configuring-basic-system-settings
+
+
+screen :
+yum install screen -version
+Verification: screen -v
+Link: https://www.cyberithub.com/install-screen-command-in-linux-rhel-centos/
+
+
+SQLMap:
+yum install python3 pip
+sudo pip3 install sqlmap
+Verification: python3 -m pip show sqlmap
+Link: https://www.geeksforgeeks.org/how-to-install-sqlmap-in-linux/
+
+tcpDump:
+yum install tcpdump -y
+verification: tcpump -D
+Link: https://www.looklinux.com/how-to-install-tcpdump-on-centosrhel-system/
+
+Nmap:
+yum install nmap
+Verification: nmap --version
+Link: https://www.cyberciti.biz/faq/howto-install-nmap-on-centos-rhel-redhat-enterprise-linux/
+
+Metasploit:
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod +x msfinstall
+./msfinstall
+Version: msfconsole
+other: msfconsole --version
+Link: https://computingforgeeks.com/install-metasploit-framework-on-centos-linux/
+https://www.hackingtutorials.org/metasploit-tutorials/metasploit-commands/
+
+Hxd Hexedit:
+sudo apt-get install hexedit
+Link: https://linuxhint.com/hex_editor_linux/
+
+test-ssh:
+Install git: sudo yum install git
+
+
+Git install:
+yum install git
+
+
+install docker
+
+
+
+
+
+
+
