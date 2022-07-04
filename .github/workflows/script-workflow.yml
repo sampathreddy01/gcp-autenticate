@@ -1,14 +1,14 @@
-# on:
-#   pull-requests:
-#     branches:
-#       - main
-#     types:
-#       - opened
-#       - synchronize
-#       - reopened
-#   push:
-#     branches:
-#       - main
+on:
+  pull-requests:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+  push:
+    branches:
+      - main
 
 defaults:
   run:
