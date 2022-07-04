@@ -17,24 +17,16 @@ defaults:
 name: Script Upload
 
 jobs:
-  # script_run:
-  #   name: Run
-  #   runs-on: [self-hosted,dbc-LZF]
+  steps:
+  - id: auth
+    uses: google-github-actions/auth@v0.4.0
+    with:
+      workload_identity_provider: 'projects/1031638264464/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+      service_account: 'my-service-account@burner-ettreddy.iam.gserviceaccount.com'
 
-  #   container:
-  #     image: gcr.io/gcp-runtimes/ubuntu_16.0.4:latest
-
-
-    steps:
-    - id: auth
-      uses: google-github-actions/auth@v0.4.0
-      with:
-        workload_identity_provider: 'projects/1031638264464/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        service_account: 'my-service-account@burner-ettreddy.iam.gserviceaccount.com'
-
-    - id: 'upload-folder'
-      uses: 'google-github-actions/upload-cloud-storage@v0'
-      with:
-        path: '../../linux-installer.txt'
-        destination: 'test-script-upload'
+  - id: 'upload-folder'
+    uses: 'google-github-actions/upload-cloud-storage@v0'
+    with:
+      path: '../../linux-installer.txt'
+      destination: 'test-script-upload'
 
