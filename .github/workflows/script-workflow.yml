@@ -18,7 +18,7 @@ name: Script Upload
 
 jobs:
   steps:
-  - uses: 'actions/checkout@v3'
+  # - uses: 'actions/checkout@v3'
 
   # - id: 'auth'
   #   uses: 'google-github-actions/auth@v0.4.0'
